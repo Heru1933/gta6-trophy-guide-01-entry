@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Legend — GTA VI Trophy Guide &amp; Tracker (PS5)</title>
+<meta name="description" content="An offline guide and tracker for all 55 PlayStation 5 trophies of Grand Theft Auto VI: the official list, a cited guide for every trophy, a platinum roadmap, missable flags, and progress that saves in your browser.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-head">
+  <div class="brand">
+    <p class="brand-mark">LEONIDA&nbsp;LEGEND</p>
+    <h1>GTA VI Trophy Guide &amp; Tracker</h1>
+    <p class="brand-sub">All 55 PlayStation 5 trophies of Grand Theft Auto VI — the official list, a cited guide for each one, a roadmap to the Platinum, and a checklist that saves in your browser. Works fully offline.</p>
+  </div>
+  <div class="progress-card" aria-live="polite">
+    <p class="progress-big"><span id="earned-count">0</span><span class="progress-of"> / 55 earned</span></p>
+    <div class="progress-bar"><div id="progress-fill"></div></div>
+    <p class="progress-grades" id="progress-grades"></p>
+    <p class="progress-note" id="progress-note"></p>
+  </div>
+</header>
+
+<nav class="tabs" aria-label="Views">
+  <button type="button" class="tab is-active" data-view="tracker">Tracker &amp; guides</button>
+  <button type="button" class="tab" data-view="roadmap">Roadmap to Platinum</button>
+  <button type="button" class="tab" data-view="missables">Missables &amp; save rules</button>
+  <button type="button" class="tab" data-view="sources">Sources</button>
+</nav>
+
+<main>
+  <section id="view-tracker" class="view">
+    <div class="toolbar">
+      <div class="tool-row">
+        <label class="search-label">Search <input id="search" type="search" placeholder="Name, description, guide…"></label>
+        <label class="spoiler-toggle"><input id="spoilers" type="checkbox" checked> Hide story spoilers <span class="hint">(story trophy names stay hidden until earned)</span></label>
+      </div>
+      <div class="tool-row">
+        <div class="chip-group" role="group" aria-label="Filter by kind">
+          <span class="chip-label">Kind</span>
+          <button type="button" class="chip is-active" data-kind="all">All</button>
+          <button type="button" class="chip" data-kind="story">Story</button>
+          <button type="button" class="chip" data-kind="missable">Missable</button>
+          <button type="button" class="chip" data-kind="collectibles">Collectibles</button>
+          <button type="button" class="chip" data-kind="activities">Activities</button>
+          <button type="button" class="chip" data-kind="online">Online</button>
+        </div>
+        <div class="chip-group" role="group" aria-label="Filter by grade">
+          <span class="chip-label">Grade</span>
+          <button type="button" class="chip is-active" data-grade="all">All</button>
+          <button type="button" class="chip" data-grade="platinum">Platinum</button>
+          <button type="button" class="chip" data-grade="gold">Gold</button>
+          <button type="button" class="chip" data-grade="silver">Silver</button>
+          <button type="button" class="chip" data-grade="bronze">Bronze</button>
+        </div>
+        <div class="chip-group" role="group" aria-label="Filter by progress">
+          <span class="chip-label">Show</span>
+          <button type="button" class="chip is-active" data-state="all">All</button>
+          <button type="button" class="chip" data-state="earned">Earned</button>
+          <button type="button" class="chip" data-state="unearned">Not yet</button>
+        </div>
+      </div>
+      <div class="tool-row">
+        <button type="button" id="export" class="action">Export progress</button>
+        <label class="action file-action">Import progress <input id="import" type="file" accept="application/json,.json"></label>
+        <button type="button" id="reset" class="action danger">Reset</button>
+        <p class="tool-status" id="tool-status" role="status"></p>
+        <p class="result-count" id="result-count"></p>
+      </div>
+    </div>
+
+    <div class="tracker-layout">
+      <div id="trophy-list" class="trophy-list"></div>
+      <aside id="detail" class="detail" aria-live="polite"></aside>
+    </div>
+  </section>
+
+  <section id="view-roadmap" class="view" hidden>
+    <div id="roadmap-body"></div>
+  </section>
+
+  <section id="view-missables" class="view" hidden>
+    <div id="missables-body"></div>
+  </section>
+
+  <section id="view-sources" class="view" hidden>
+    <div id="sources-body"></div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <p><strong>Leonida Legend</strong> is a fan-made guide, written for this entry. It is not affiliated with Rockstar Games or PlayStation, and it uses no Rockstar artwork or logos. Trophy names, descriptions and grades are the official ones as PlayStation publishes them; every guide is written in this entry's own words and cites its sources beside each trophy.</p>
+  <p>The app runs entirely from its own files: no account, no network, and your progress never leaves this browser unless you export it.</p>
+</footer>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
